@@ -1,3 +1,7 @@
+A {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1160px;
   margin: 0 auto;
@@ -6,7 +10,16 @@
 header {
   background-color: #eee;
   padding: 30px 0;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
+
+main {
+  padding-top: 80px !important;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -22,4 +35,6 @@ nav {
   min-width: 100px;
   list-style-type: none;
 }
+
+
 
