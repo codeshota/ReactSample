@@ -2,8 +2,9 @@ import React from 'react';
 
 export const NavigationBar = () => (
   <header>
-    <nav>
-      <ul className="container">
+    <nav className="container">
+      <a href="/" className="nav__logo">Sample</a>
+      <ul className="nav__menu">
         <li>
           <a href="/">Home</a>
         </li>
