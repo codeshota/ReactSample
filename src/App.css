@@ -3,8 +3,9 @@ A {
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1140px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 header {
@@ -27,6 +28,7 @@ nav {
 
 .nav__menu {
   display: flex;
+  /* flex-wrap: wrap; */
   justify-content: flex-end;
   margin: 0;
 }
@@ -34,7 +36,9 @@ nav {
 .nav__menu > li {
   min-width: 100px;
   list-style-type: none;
+  flex: content;
 }
+
 
 
 
