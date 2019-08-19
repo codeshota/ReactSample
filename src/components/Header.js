@@ -5,11 +5,14 @@ import bgImage from '../assets/bg-image.jpg';
 
 const Styles = styled.div`
   .jumbo {
-    margin-top: 56px;
+    margin: 56px 0 0;
     background: url(${bgImage}) no-repeat fixed bottom;
     background-size: cover;
-    height: 300px;
     color: white;
+
+    .intro {
+      padding: 200px 0;
+    }
   }
 `;
 
@@ -17,8 +20,8 @@ export const Header = () => (
   <Styles>
     <header>
       <Jumbotron fluid className="jumbo text-center">
-        <Container>
-          <h1>Fluid jumbotron</h1>
+        <Container className="intro">
+          <h2>Fluid jumbotron</h2>
           <p>
             This is a modified jumbotron that occupies the entire horizontal space of
             its parent.
