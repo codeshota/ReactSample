@@ -9,11 +9,13 @@ import { Contact } from './pages/Contact';
 import { NoMatch } from './pages/NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <React.Fragment>
       <NavigationBar />
+      <Header />
       <Layout>
         <Router>
           <Switch>

@@ -4,7 +4,10 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   nav {
-    /* background-color: red !important; */
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 1000;
   }
 `;
 
