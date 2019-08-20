@@ -9,6 +9,7 @@ import { Contact } from './pages/Contact';
 import { NoMatch } from './pages/NoMatch';
 import { NavigationBar } from './components/NavigationBar';
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route component={NoMatch} />
         </Switch>
       </Router>
+      <Footer />
     </React.Fragment>
   );
 }

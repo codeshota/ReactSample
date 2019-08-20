@@ -26,9 +26,7 @@ export const Header = () => (
             This is a modified jumbotron that occupies the entire horizontal space of
             its parent.
           </p>
-          <p>
-            <Button variant="primary">Learn more</Button>
-          </p>
+          <a href="#" className="btn btn-primary">Подробнее</a>
         </Container>
       </Jumbotron>
     </header>

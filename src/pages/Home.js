@@ -1,11 +1,12 @@
 import React from 'react';
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Container, Row, Col, Image, InputGroup, FormControl, Button } from 'react-bootstrap';
 import styled from 'styled-components';
 import i1 from '../assets/i-1.png';
 import i3 from '../assets/i-3.png';
 import i4 from '../assets/i-4.png';
 import i5 from '../assets/i-5.png';
 import hAbout from '../assets/h-about.jpg';
+import bgImage from '../assets/bg-image.jpg';
 
 const Styles = styled.div`
   .advantages {
@@ -22,6 +23,7 @@ const Styles = styled.div`
       }
     }
   }
+
   .about {
     padding: 80px 0;
     background-color: #eee;
@@ -30,13 +32,22 @@ const Styles = styled.div`
       width: 100%;
     }
   }
+
+  .mailer {
+    padding: 80px 0;
+    background: url(${bgImage}) no-repeat fixed bottom;
+
+    h2, p {
+      color: white;
+    }
+  }
 `;
 
 export const Home = () => (
   <Styles>
     <section className="advantages">
       <Container className="text-center">
-        <h2>Компания Sample</h2>
+        <h2 className="mb-5">Компания Sample</h2>
         <p>Рады видеть Вас на нашем сайте! Компания Sample — это Ваша возможность получить все необходимые масла, расходники и запчасти не выходя из дома. Мы не оставим Вас одних с капризами Вашего автомобиля и всегда поможем!</p>
         <Row className="justify-content-md-center icons">
           <Col lg={3}>
@@ -60,15 +71,47 @@ export const Home = () => (
     </section>
     <section className="about">
       <Container className="text-left">
+        <h2 className="text-center mb-5">О нас</h2>
         <Row className="justify-content-md-center icons">
-          <Col lg={6}>
-            <h2>Немного о нас</h2>
-            <p>Мы занимаемся продажей запчастей и масел - у нас Вы найдете все, что необходимо для технического обслуживания Вашего автомобиля: масла, фильтры, тормозные диски и колодки, элементы подвески и многое другое.</p>
+          <Col lg={6} className="mb-3">
+            <h3>Низкая цена</h3>
+            <hr/>
+            <p>За счет применения современных технологий логистики автозапчастей и собственной транспортной компании.</p>
           </Col>
-          <Col lg={6}>
-            <Image className="ha-image" src={hAbout} />
+          <Col lg={6} className="mb-3">
+            <h3>Быстрая доставка</h3>
+            <hr/>
+            <p>Доставка в кратчайшие сроки с Московских оптовых складов (1–5 дней) и складов в Европе (6–10 дней).</p>
           </Col>
         </Row>
+        <Row className="justify-content-md-center icons">
+          <Col lg={6} className="mb-3">
+            <h3>Удобный поиск</h3>
+            <hr/>
+            <p>Автоматизация заказов и удобная поисковая система по складам и прайс-листам всех основных производителей.</p>
+          </Col>
+          <Col lg={6} className="mb-3">
+            <h3>Продаём товар</h3>
+            <hr/>
+            <p>Автосервисам, Автопаркам, Автомагазинам и в Розницу.</p>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    <section className="mailer">
+      <Container>
+        <h2 className="text-center">Подписка</h2>
+        <p className="text-center">Будь вкурсе наших акций и предложений.</p>
+        <InputGroup className="mb-3">
+          <FormControl
+            placeholder="Email"
+            aria-label="Recipient's Email"
+            aria-describedby="basic-addon2"
+          />
+          <InputGroup.Append>
+            <Button variant="primary">Подписаться</Button>
+          </InputGroup.Append>
+        </InputGroup>
       </Container>
     </section>
   </Styles>
