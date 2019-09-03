@@ -10,9 +10,8 @@ import bgImage from '../assets/bg-image.jpg';
 
 const Styles = styled.div`
   .advantages {
-    padding: 80px 0;
 
-    .icons {
+    /* .icons {
       margin-top: 40px;
 
       .icon {
@@ -21,20 +20,10 @@ const Styles = styled.div`
         padding: 10px;
         margin: 10px;
       }
-    }
-  }
-
-  .about {
-    padding: 80px 0;
-    background-color: #eee;
-
-    .ha-image {
-      width: 100%;
-    }
+    } */
   }
 
   .mailer {
-    padding: 80px 0;
     background: url(${bgImage}) no-repeat fixed bottom;
 
     h2, p {
@@ -45,11 +34,11 @@ const Styles = styled.div`
 
 export const Home = () => (
   <Styles>
-    <section className="advantages">
+    <section className="advantages py-5">
       <Container className="text-center">
-        <h2 className="mb-5">Компания Sample</h2>
-        <p>Рады видеть Вас на нашем сайте! Компания Sample — это Ваша возможность получить все необходимые масла, расходники и запчасти не выходя из дома. Мы не оставим Вас одних с капризами Вашего автомобиля и всегда поможем!</p>
-        <Row className="justify-content-md-center icons">
+        <h2 className="mb-5">Lorem, ipsum.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi culpa numquam ut id vero magnam eum velit, aliquam possimus aliquid necessitatibus commodi, explicabo aut quos distinctio vitae esse earum enim alias laboriosam tempore ex! Harum in adipisci deleniti doloribus molestias?</p>
+        {/* <Row className="justify-content-md-center icons">
           <Col lg={3}>
             <Image className="icon" src={i1} roundedCircle />
             <p>Бесплатная доставка от 2500 руб.</p>
@@ -66,42 +55,14 @@ export const Home = () => (
             <Image className="icon" src={i5} roundedCircle />
             <p>Оплата по факту доставки заказа</p>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
-    <section className="about">
-      <Container className="text-left">
-        <h2 className="text-center mb-5">О нас</h2>
-        <Row className="justify-content-md-center icons">
-          <Col lg={6} className="mb-3">
-            <h3>Низкая цена</h3>
-            <hr/>
-            <p>За счет применения современных технологий логистики автозапчастей и собственной транспортной компании.</p>
-          </Col>
-          <Col lg={6} className="mb-3">
-            <h3>Быстрая доставка</h3>
-            <hr/>
-            <p>Доставка в кратчайшие сроки с Московских оптовых складов (1–5 дней) и складов в Европе (6–10 дней).</p>
-          </Col>
-        </Row>
-        <Row className="justify-content-md-center icons">
-          <Col lg={6} className="mb-3">
-            <h3>Удобный поиск</h3>
-            <hr/>
-            <p>Автоматизация заказов и удобная поисковая система по складам и прайс-листам всех основных производителей.</p>
-          </Col>
-          <Col lg={6} className="mb-3">
-            <h3>Продаём товар</h3>
-            <hr/>
-            <p>Автосервисам, Автопаркам, Автомагазинам и в Розницу.</p>
-          </Col>
-        </Row>
-      </Container>
-    </section>
-    <section className="mailer">
+
+    <section className="mailer py-5">
       <Container>
-        <h2 className="text-center">Подписка</h2>
-        <p className="text-center">Будь вкурсе наших акций и предложений.</p>
+        <h2 className="text-center">Lorem</h2>
+        <p className="text-center">Lorem ipsum dolor sit amet consectetur.</p>
         <InputGroup className="mb-3">
           <FormControl
             placeholder="Email"
@@ -109,7 +70,7 @@ export const Home = () => (
             aria-describedby="basic-addon2"
           />
           <InputGroup.Append>
-            <Button variant="primary">Подписаться</Button>
+            <Button variant="primary">Lorem</Button>
           </InputGroup.Append>
         </InputGroup>
       </Container>

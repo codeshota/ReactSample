@@ -5,7 +5,7 @@ import bgImage from '../assets/bg-image.jpg';
 
 const Styles = styled.div`
   .jumbo {
-    margin: 56px 0 0;
+    margin: 0;
     background: url(${bgImage}) no-repeat fixed bottom;
     background-size: cover;
     color: white;
@@ -26,7 +26,7 @@ export const Header = () => (
             This is a modified jumbotron that occupies the entire horizontal space of
             its parent.
           </p>
-          <a href="#" className="btn btn-primary">Подробнее</a>
+          <a href="#" className="btn btn-primary">Lorem</a>
         </Container>
       </Jumbotron>
     </header>
